@@ -15,3 +15,8 @@ curl localhost:8090/foo/bar
 # To read key pair from different remote host
 curl localhost:8091/foo
 ```
+
+Note please modify your /etc/hosts file to run locally
+```bash
+echo "127.0.0.1 join.internal.com" >> /etc/hosts
+```
