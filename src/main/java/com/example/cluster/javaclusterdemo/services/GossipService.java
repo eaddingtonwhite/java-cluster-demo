@@ -67,9 +67,9 @@ public class GossipService {
     public void replicateStateToOtherMembers(DataEvent event) {
         //First always store state locally
         localStateService.tryToPersistState(event);
-        //Then send to all other members.
+        //Then gossip state to all other members.
         Message message = Message.fromData(event);
-        coreCluster.otherMembers().forEach(member -> coreCluster.spreadGossip(message));
+        coreCluster.spreadGossip(message);
     }
 
     /**
