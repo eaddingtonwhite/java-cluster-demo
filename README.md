@@ -20,3 +20,11 @@ Note please modify your /etc/hosts file to run locally
 ```bash
 echo "127.0.0.1 join.internal.com" >> /etc/hosts
 ```
+
+To Test endpoint
+```bash
+curl http://dist-keys-elb-795693697.us-west-2.elb.amazonaws.com/foo/bar
+curl http://dist-keys-elb-795693697.us-west-2.elb.amazonaws.com/foo
+curl http://dist-keys-elb-795693697.us-west-2.elb.amazonaws.com/foo/boo
+curl http://dist-keys-elb-795693697.us-west-2.elb.amazonaws.com/foo
+```
