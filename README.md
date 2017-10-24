@@ -3,8 +3,8 @@
 ```bash
 mvn package 
 java -jar target/java-cluster-demo-0.0.1-SNAPSHOT.jar
-java -jar target/java-cluster-demo-0.0.1-SNAPSHOT.jar --server-port 8091
-java -jar target/java-cluster-demo-0.0.1-SNAPSHOT.jar --server-port 8092
+java -jar target/java-cluster-demo-0.0.1-SNAPSHOT.jar --server.port=8091
+java -jar target/java-cluster-demo-0.0.1-SNAPSHOT.jar --server.port=8092
 ```
 
 Feel free to add or remove nodes and see how state replicates through the various nodes.
